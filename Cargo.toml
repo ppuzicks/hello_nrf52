@@ -1,0 +1,18 @@
+[package]
+name = "hello_nrf52"
+version = "0.1.0"
+authors = ["ppuzicks <thkim7816@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7.2"
+cortex-m-rt = "0.6.13"
+nrf52840-hal = "0.12.1"
+panic-halt = "0.2.0"
+panic-itm = "0.4.2"
+
+[dependencies.embedded-hal]
+version = "0.2.3"
+features = ["unproven"]
